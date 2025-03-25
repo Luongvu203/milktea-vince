@@ -1,0 +1,261 @@
+/*======================================= nav-bar-page ================================*/
+.container-nav {
+  background-color: #fff;
+}
+
+.nav-admin-page {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.nav-admin-page .nav-item {
+  padding: 15px 23px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.nav-item:after,
+.dropdown:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #221f20;
+  transition: all ease-in-out 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover:after,
+.dropdown:hover:after {
+  width: 100%;
+}
+
+.nav-admin-page li a {
+  color: #221f20;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-admin-page .nav-item:hover {
+  border-bottom: none;
+}
+
+.dropdown {
+  padding: 15px 23px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  z-index: 10;
+  position: absolute;
+  width: 250px;
+  top: 120%;
+  background-color: #1ab6a1;
+  text-align: center;
+  cursor: pointer;
+  left: 0;
+  transition: all ease-in-out 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown-item {
+  padding: 15px 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+  top: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.dropdown-item:hover {
+  background-color: #221f20;
+}
+
+.dropdown-item:hover a {
+  color: #fff;
+}
+
+/*======================================= top-left-content ================================*/
+
+#main-page {
+  margin-top: 20px;
+}
+
+.container-main-top-page {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+fieldset {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.left-content-top {
+  width: 18%;
+}
+
+.left-content-top legend,
+.right-content-top legend,
+.left-bottom-content legend,
+.right-content-bottom legend {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.shop-des-container {
+  padding: 5px 15px;
+  margin: 20px auto;
+  border: 1px solid lightgray;
+  box-shadow: 0 8px 10px 0 rgb(0 0 0 / 10%);
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  color: #221f20;
+  border-top-left-radius: 20px;
+}
+
+.img-left-content-des {
+  width: 100px;
+  height: 100px;
+}
+
+.shop-info {
+  margin-top: 10px;
+  display: block;
+}
+
+.shop-info p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.shop-info span {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.content-left-bottom {
+  margin-top: 20px;
+}
+
+/*======================================= top-right-content ================================*/
+
+.right-content-top {
+  width: 82%;
+  height: 455px;
+  max-height: 455px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+}
+
+.right-content-top::-webkit-scrollbar {
+  width: 3px;
+}
+
+.right-content-top::-webkit-scrollbar-thumb {
+  background-color: #888888;
+}
+
+.right-content-top::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.order-table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 98%;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-table th {
+  background-color: #ffd400;
+}
+
+.title-column {
+  color: #221f20;
+}
+
+.total-column {
+  color: #f80000;
+  font-weight: 600;
+}
+
+.message-table-orders {
+  text-align: center;
+  margin-top: 15%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.note-column {
+  color: #1e90ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.time-column {
+  width: 120px;
+}
+
+/*======================================= bottom-right-content ================================*/
+
+.right-content-bottom {
+  width: 95%;
+  padding: 20px;
+  margin-left: 35px;
+}
+
+.container-conntent-sales,
+.container-rank-sales {
+  padding: 0px 15px;
+  margin: 0px auto;
+  border: 1px solid lightgray;
+  box-shadow: 0 8px 10px 0 rgb(0 0 0 / 10%);
+  width: 100%;
+  color: #221f20;
+  border-radius: 15px;
+}
+
+.title-sales {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.total-quantity {
+  color: #f80000;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.container-rank-sales {
+  margin-top: 20px;
+}
